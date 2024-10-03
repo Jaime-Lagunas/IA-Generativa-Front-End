@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada</title>
+    <title>Jornada, empresa de viajes y turismo</title>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +22,15 @@
                     <a href="/" class="encabezado__logo" title="Página principal de Jornada">
                         <img class="encabezado__logo--icono" alt="Logo de Jornada, empresa de viajes y turismo" src="./img/logoprovisriablanca-1@2x.png" />
                     </a>
-                <nav class="encabezado__navegacion">
-                    <ul class="encabezado__navegacion--lista">
-                        <li class="encabezado__navegacion--elemento">
+                <nav role="navigation" class="encabezado__navegacion">
+                    <ul class="encabezado__navegacion--lista" role="listbox">
+                        <li class="encabezado__navegacion--elemento" role="option">
                             <a href="/" aria-label="Enlace al blog de viajes">Blog</a>
                         </li>
-                        <li class="encabezado__navegacion--elemento">
+                        <li class="encabezado__navegacion--elemento" role="option">
                             <a  href="/" aria-label="Enlace a paquetes de viaje">Paquetes de viaje</a>
                         </li>
-                        <li class="encabezado__navegacion--elemento">
+                        <li class="encabezado__navegacion--elemento" role="option">
                             <a  href="/" aria-label="Enlace de contacto para consultas">Contacto</a>
                         </li>
                     </ul>
@@ -39,19 +39,23 @@
     
     </header>
 
-    <div class="banner">
+    <section class="banner">
         <div class="banner__wrapper">
-            <img class="banner__img" alt="" src="./img/maldivas@2x.png" />
-            <div class="banner__descripcion">
+            <figure class="banner__figure">
+                <img class="banner__img" alt="Persona en una canoa en medio de un río" src="./img/maldivas@2x.png" />
+                <figcaption class="banner__descripcion">
                 Somos una agencia apasionada por crear viajes inolvidables. 
                 Desde el destino hasta la selección de actividades, nos 
                 encargamos de todos los detalles para que disfrutes al máximo
-                 cada momento de tu jornada.
-            </div>
+                cada momento de tu jornada.
+                </figcaption>
+            </figure>
         </div>
-    </div>
-    <div class="container">
+    </section>
 
+
+    <div class="container">
+        
         <div class="ofertas">
             <div class="ofertas__titulo">
                 <div class="ofertas__titulo--texto">Ofertas de la semana</div>
